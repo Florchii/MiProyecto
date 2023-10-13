@@ -1,113 +1,14 @@
 *{  
     margin: 0;
     padding: 0;
-     /*box-sizing: border-box; */
+
 }
 
 body { background-image: url(/Imagenes/3596202.jpg);
     background-size:70%;
     font-family: 'Life Savers', cursive;
-    font-weight: bold
-    ;
+    font-weight: bold;
 
 }
 
- header{ 
-    height:50px;
-    width: 100%;
-    position: fixed;
-    display: flex;
-    border: 1px;
-    border-style:groove;
-    border-color: black;
-    background-color: white;   
-}
-h1 { margin-top: 0px;
-    padding: 0 20px;
-    /*background: linear-gradient(to right,green, white, red);*/
-    color: black;
-    font-size: 35px;
-    background-color: white;
-}
-
-nav { 
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-left: 5px;
-    padding-right: 5px;
-    font-weight: bold ;
-    background-color: white;
-    
-}
-
-ul li {  
-    display: inline-block;
-    padding: 0px 30px; 
-}
-
-a {  color: deeppink;
-    text-decoration: none;   
-}
-
-a:hover{  color: aqua;
-    
-}
-
-h2 {  color:deeppink;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 40px;
-}
-
-h2 { 
-    line-height: 100%;
-    background-color: white;
-    font-size: 37px;
-    border: 1px;
-    border-style:groove;
-    border-color: black; 
-}
-
-section p{ color: black; 
-      text-align: center;
-      line-height: 125%;
-      background-color: white;
-      font-size: 20px;
-      border: 1px;
-    border-style:groove;
-    border-color: black
-}
-
-aside { 
-    width: 30%;
-    padding-left: 15px;
-    margin: 15px;
-    float: right;
-    border: 1px;
-    border-style:groove;
-    border-color: black;
-    background-color: white;
-
-    /* margin:70px;
-    padding: 10px 20px;
-    color: black; 
-    text-align: center;
-    line-height: 125%;
-    background-color: white;
-    font-size: 17px;
-    */
-} 
-
-
-footer { background-color: white;
-    margin-top: 120px;
-    margin-right: 400px;
-    margin-left: 40px;
-    padding: 15px;
-    border: 2px;
-    border-style:groove;
-    border-color: black
-}
+ 
