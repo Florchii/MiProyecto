@@ -1,14 +1,136 @@
-*{  
-    margin: 0;
-    padding: 0;
-
-}
-
-body { background-image: url(/Imagenes/3596202.jpg);
-    background-size:70%;
-    font-family: 'Life Savers', cursive;
-    font-weight: bold;
-
-}
-
  
+*{  
+    margin: 0;/* Reset de pagina */
+    padding: 0; /* Reset de pagina */
+    box-sizing: border-box ;
+
+}
+body {
+    background-image: url(/Imagenes/fondo1.jpg); /* Imagen de fondo */
+    background-size:110%; /* Tamaño de imagen */
+    font-family: 'Life Savers', cursive; /* Tipografia*/
+    font-weight: bold; 
+    
+    }
+.container {    
+    display: flex; /* Flexbox */
+    align-items:center; /* Flexbox */
+    justify-content: center; /* Flexbox */
+    width: 100%; /* Ancho */
+    height: 50px; /* Alto */
+    padding: 20px ; 
+    letter-spacing: 100px; /* Espacio entre palabras */
+    top: 0; /* Para evitar que se mueva la navbar */ 
+    font-family: 'Life Savers', cursive; 
+    background-color: #fe4d9e; 
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px; /* Borde redondeado */
+    z-index: 2; /* Elemento por encima de todo.*/
+}
+
+
+.listas {  
+    list-style: none;
+    display: inline-block; /* Alineado de elementos, espacio entre palabras.*/
+    padding: 0px 18px;
+    text-decoration: none;
+}
+
+nav ul li {  
+    margin-top: 14px;
+    text-decoration: underline;/* Sin subrayado */
+}
+
+a {  
+    color: rgb(255, 0, 191);/* Color de letras del navbar */
+    text-decoration: none; 
+}
+
+.button {
+    background-color:#F50087; opacity: .8;/* Color del fondo del boton */
+    color: white; /* Color letra */
+    font-family: 'Life Savers', cursive;
+    font-weight: bolder; /* Negrita */
+    font-size: 14px;
+    padding: 5px 5px;
+    border: 0;
+    border-radius: 10px; /* Redondeo del borde */
+}
+
+.button:hover {
+    background-color: aquamarine;/* Boton cambia al pasar el mousse*/
+    color: deeppink;
+    border: 0;
+    padding: 5px 5px;
+}
+
+/* Centrado de parrafos */
+.parrafo {    
+    display: flex; /* Flexbox */
+    display: inline-block; /* Elementos en linea */
+    align-items: center; /* Centrado */
+    justify-content: center; /* Centrado */
+    margin-top: 40px; /* Margen arriba */
+    margin-left: 110px; /* Margen izquierdo */
+    margin-right: 110px; /* Margen derecho */
+    padding: 10px; /* Espacio entre borde y contenido */
+    font-family: 'Life Savers', cursive; /* Tipografia*/
+    color: white; /* Color de la letra*/
+    background-color: black; opacity: 0.8; /* Color del fondo y opacidad */
+    border-color: black; /* Color del borde */
+    border-width: 1px; /* Tamaño del borde */
+    border-style: solid; /* Borde de linea */
+    line-height: 1.5em; /* Interlineado */
+    text-align: center; /* alineado del texto */
+    text-indent: 2em; /* Sangria al principio del parrafo */
+}
+
+.parrafo:hover   {
+    background-color: black; opacity: 1; /* Opacidad al pasar el mousse */
+}
+
+/* Limitacion de las imagenes */
+div{ 
+     display: flex;
+     width: 100%;
+     height: 400px;
+     margin: auto;
+     margin-top: 40px;
+     margin-bottom: 1px;
+}
+ /* Opacidad, transicion de la imagen sin acercar el mousse */
+ div img{ 
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+
+}
+/* Como se comporta la imagen al pasar el mousse */
+div img:hover { 
+     cursor: crosshair;
+     width: 300px;
+     opacity: 1;
+     filter: contrast(120%);
+}
+
+/* Estilo al pie de pagina */
+footer { 
+    background-color: black; 
+    border-width: 1px;
+    border-style: solid;
+    color: white;
+    text-align: center;
+}
+
+@media (min-width: 768px ) { 
+    body { 
+    font-size: 20px;
+} 
+    .container { 
+    font-size: 20px;
+    letter-spacing: 50px;
+} 
+}
