@@ -124,13 +124,13 @@ footer {
     color: white;
     text-align: center;
 }
-
+/* Responsive Desing */
 @media (min-width: 768px ) { 
     body { 
     font-size: 20px;
 } 
     .container { 
     font-size: 20px;
-    letter-spacing: 50px;
+    letter-spacing: 50px; /* Espacio entre palabras */
 } 
 }
