@@ -6,7 +6,7 @@
 
 }
 body {
-    background-image: url(./Imagenes/fondo.jpg); /* Imagen de fondo */
+    background-image: url('./Imagenes/fondo.jpg'); /* Imagen de fondo */
     background-size:110%; /* Tamaño de imagen */
     background-color: black;
     font-family: 'Life Savers', cursive; /* Tipografia*/
