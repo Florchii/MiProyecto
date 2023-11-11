@@ -8,10 +8,7 @@
 body {
     background-image: url('./Imagenes/fondo.jpg'); /* Imagen de fondo */
     background-size:110%; /* Tamaño de imagen */
-    background-color: black;
-    font-family: 'Life Savers', cursive; /* Tipografia*/
-    font-weight: bold; 
-    
+    font-family: 'Life Savers', cursive; /* Tipografia*/ 
     }
 .container {    
     display: flex; /* Flexbox */
@@ -116,6 +113,21 @@ div img:hover {
      opacity: 1;
      filter: contrast(120%);
 }
+
+#parrafoCambiante { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.botonAcceder { 
+    margin-left: 450px;
+    padding: 5px 5px;
+    border: 0;
+    border-radius: 10px;
+}
+
 
 /* Estilo al pie de pagina */
 footer { 
