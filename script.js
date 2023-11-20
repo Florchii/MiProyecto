@@ -5,7 +5,7 @@ console.log("El archivo JavaScript está vinculado");
 // Función cambiar el parrafo
 function cambiarTexto() {
     let parrafo = document.getElementById("parrafoCambiante");
-    parrafo.textContent = " Birria, Cochinita pibil, Conchas mexicanas, etc.";
+    parrafo.textContent = " Recetas tipicas mexicanas: Birria, Cochinita pibil, tacos al pastor, etc.";
   }
   
 
