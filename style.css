@@ -10,34 +10,31 @@ body {
     background-size:110%; /* Tamaño de imagen */
     font-family: 'Life Savers', cursive; /* Tipografia*/ 
     }
-.container {    
-    display: flex; /* Flexbox */
-    align-items:center; /* Flexbox */
-    justify-content: center; /* Flexbox */
-    width: 100%; /* Ancho */
-    height: 50px; /* Alto */
-    padding: 20px ; 
-    letter-spacing: 100px; /* Espacio entre palabras */
-    top: 0; /* Para evitar que se mueva la navbar */ 
-    font-family: 'Life Savers', cursive; 
-    background-color: #fe4d9e; 
-    border-width: 1px;
-    border-style: solid;
-    border-radius: 10px; /* Borde redondeado */
-    z-index: 2; /* Elemento por encima de todo.*/
-}
-
+.menu {
+    font-family: 'Life Savers', cursive; /* Tipografia*/ 
+    color: white;
+    padding: 0 70px ;
+    
+    } 
 
 .listas {  
     list-style: none;
     display: inline-block; /* Alineado de elementos, espacio entre palabras.*/
-    padding: 0px 18px;
     text-decoration: none;
+    text-align: center;
+    background-color:#F50087;/* Color del fondo del boton */
+    font-family: 'Life Savers', cursive;
+    font-size: 18px;
+    padding: 5px 5px;
+    border: 0;
+    border-radius: 10px; /* Redondeo del borde */
 }
 
 nav ul li {  
+    
     margin-top: 14px;
     text-decoration: underline;/* Sin subrayado */
+    
 }
 
 a {  
@@ -45,23 +42,7 @@ a {
     text-decoration: none; 
 }
 
-.button {
-    background-color:#F50087; opacity: .8;/* Color del fondo del boton */
-    color: white; /* Color letra */
-    font-family: 'Life Savers', cursive;
-    font-weight: bolder; /* Negrita */
-    font-size: 14px;
-    padding: 5px 5px;
-    border: 0;
-    border-radius: 10px; /* Redondeo del borde */
-}
 
-.button:hover {
-    background-color: aquamarine;/* Boton cambia al pasar el mousse*/
-    color: deeppink;
-    border: 0;
-    padding: 5px 5px;
-}
 
 /* Centrado de parrafos */
 .parrafo {    
@@ -114,6 +95,37 @@ div img:hover {
      filter: contrast(120%);
 }
 
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+  color: rgb(255, 0, 191);
+}
+.tituloForm {
+    color: white;
+    margin-top: 10px;
+    margin: 5px;
+    border-style: dotted;
+    border-radius: 50px;
+    border-width: 5px;
+    opacity: .8;
+    background-color: rgb(255, 0, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+form {
+    color: rgb(255, 0, 191);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; opacity: 1;
+    padding: 10px;
+}
+
+
+
 #parrafoCambiante { 
     display: flex;
     justify-content: center;
@@ -129,6 +141,7 @@ div img:hover {
 }
 
 
+
 /* Estilo al pie de pagina */
 footer { 
     background-color: black; 
@@ -137,13 +150,20 @@ footer {
     color: white;
     text-align: center;
 }
+
+
+
+
 /* Responsive Desing */
-@media (min-width: 768px ) { 
-    body { 
-    font-size: 20px;
-} 
-    .container { 
-    font-size: 20px;
-    letter-spacing: 50px; /* Espacio entre palabras */
-} 
+
+@media only screen and (max-width: 768px) 
+{
+    /* Estilos para pantallas pequeñas */
+    body {
+      background-size: cover; /* Ajusta el tamaño de fondo para pantallas pequeñas */
+    }
+  
+    .menu {
+      padding: 0 20px; 
+    }
 }

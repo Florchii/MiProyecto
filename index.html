@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">  <!--  Vinculacion con css  -->
     <title>Gastronomía Mexicana</title>  <!--  Titulo  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">  <!--  Vinculacion de tipografia  -->
@@ -15,10 +15,10 @@
     <header>
            <nav class="container">  <!--  Barra de navegacion  -->
                 <ul> <!-- Lista  -->
-                <li class="listas"><a href="#inicio"><button class="button">Inicio</button></a></li>  <!-- Botones del menu   -->
-                <li class="listas"><a href="#historia"><button class="button">Historia</button></a></li> <!-- Botones del menu   -->
-                <li class="listas"><a href="#tradiciones"><button class="button">Tradiciones</button></a></li> <!-- Botones del menu   -->
-                <li class="listas"><a href="#utensilios"><button class="button">Utensilios</button></a></li> <!-- Botones del menu   -->
+                <li class="listas"><a href="#inicio" class="menu">Inicio</a></li>  <!-- Botones del menu   -->
+                <li class="listas"><a href="#historia" class="menu">Historia</a></li> <!-- Botones del menu   -->
+                <li class="listas"><a href="#tradiciones" class="menu">Tradiciones</a></li> <!-- Botones del menu   -->
+                <li class="listas"><a href="#utensilios" class="menu">Utensilios</a></li> <!-- Botones del menu   -->
             </ul>
         </nav>
     </header>
@@ -39,8 +39,11 @@
             de ser que las hace una experiencia inolvidable. Desde el día de la 
             independencia hasta el día de muertos han sido fechas que han traspasado 
             fronteras y llamado la atención de personas de todo el mundo, incluso 
-            comenzando a celebrarlo en distintos países.
-         </p>
+            comenzando a celebrarlo en distintos países. </p>
+          <audio controls>
+            <source src="./Audio/Y2meta.app - Mariachi Loco - Mariachi Mexicano (128 kbps).mp3" >
+          <p> Audio de mariachi </p>
+         </audio> 
         </article>
         <div>    <!--  Cuadro con imagenes  -->
              <img src="Imagenes/mapa actual.jpg" alt="Mapa actual">
@@ -143,8 +146,9 @@
                 acostumbra a haber conciertos con distintos grupos musicales que 
                 animan al público en las noches, junto con una gastronomía 
                 representativa de cada lugar. </p>
-             <p>Los carnavales más famosos del país son los de Veracruz, CDMX, Mérida y Cozumel.
-             </p>
+             <p>Los carnavales más famosos del país son los de Veracruz, CDMX, Mérida y Cozumel. <br> </p>
+               "<iframe src="https://www.youtube.com/embed/a-cm795x7m8?si=YE-lQDtuxC9hy3eh" 
+               title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></p>
             </article>
             <div> <!--  Cuadro con imagenes  -->
                 <img src="Imagenes/altar.jpg" alt="Altar dia de muertos">
@@ -202,23 +206,33 @@
             </p>  <!--  texto  -->
         </article>
     </section>
+    <!--  Formulario de newsletter  -->
+      <h4 class="tituloForm"> Newsletter </h4> 
+      <br>
+      <form action="/procesar_formulario" method="post">
+       <label for="email"> Email:</label> 
+       <input type="text" id="email" name="email" required>
+       <!--  Boton de envio -->
+       <input type="submit" value="Enviar">
+    </form>
+   
 </main>
   
-<p id="parrafoCambiante"> Proximamente recetas mexicanas </p>
+<p id="parrafoCambiante"> <a href="https://www.youtube.com/watch?v=J81dH77sJz8"> Enlace a recetas como:</a></p>
   <button class="botonAcceder" onclick="cambiarTexto()"> Click para saber más </button>
-    
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    <!-- Vinculacion de bootstrap  -->
+    <!-- Vinculacion de bootstrap  -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
 <script src="script.js"></script>
-</body>
-<footer> <!-- Pie de pagina -->
+
+       <footer> <!-- Pie de pagina -->
+          <!--  Bootstrap  -->
         <form class="d-flex" role="search"> <!--  Barra de busqueda  -->
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">  <!--  Bootstrap  -->
             <button class="btn btn-outline-success" type="submit">Search</button> 
-        </form>
+        </form>  <!--  Bootstrap  -->
             &#169; 2023 Florencia Kromer <!--  Copyright -->
-               
           <p><a href="mailto:florchukromer@gmail.com"> Contacto</a> ante cualquier duda. 
       (Click en contacto para acceder a mi email.)</p>
       </footer>
-        
+    </body>
 </html>
